@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.game-container {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  width: 350px;
+  padding: 25px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 1px 1px 6px rgba(255,255,255,0.3);
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.molecule-container {
+  height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#molecule-img {
+  height: 70%;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-right: 30px;
+}
+
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.options button {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+  background-color: #667eea;
+  color: #fff;
+}
+
+.feedback {
+  font-size: 18px;
+  min-height: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#start-btn {
+  background: #764ba2;
+  color: #fff;
+  border: none;
+  padding: 14px 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(118, 75, 162, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+  background-color: #5b358f;
+}
+
+.explanation {
+  margin-top: 10px;
+  font-style: italic;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+  .game-container {
+    width: 90vw;
+    padding: 20px;
+  }
+  
+  .molecule-container {
+    height: 200px;
+  }
+  
+  .options {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .status {
+    font-size: 16px;
+  }
+  
+  .feedback {
+    font-size: 16px;
+  }
+  
+  #start-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  
+  .explanation {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsividade para telas médias (tablets, laptops) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .game-container {
+    width: 500px;
+    padding: 30px 40px;
+  }
+  
+  .molecule-container {
+    height: 350px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .status {
+    font-size: 20px;
+  }
+  
+  .feedback {
+    font-size: 20px;
+  }
+  
+  .options button {
+    font-size: 18px;
+    padding: 14px;
+  }
+  
+  #start-btn {
+    font-size: 20px;
+    padding: 16px 30px;
+  }
+  
+  .explanation {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsividade para telas grandes (desktops grandes) */
+@media (min-width: 1025px) {
+  .game-container {
+    width: 650px;
+    padding: 40px 50px;
+  }
+  
+.molecule-container {
+  height: 600px;
+  width: 600px;
+}
+
+
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .status {
+    font-size: 22px;
+  }
+  
+  .feedback {
+    font-size: 22px;
+  }
+  
+  .options button {
+    font-size: 20px;
+    padding: 16px;
+  }
+  
+  #start-btn {
+    font-size: 22px;
+    padding: 18px 35px;
+  }
+  
+  .explanation {
+    font-size: 2rem;
+  }
+}
